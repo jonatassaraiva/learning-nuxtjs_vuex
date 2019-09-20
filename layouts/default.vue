@@ -31,7 +31,7 @@ body {
 }
 #app {
   box-sizing: border-box;
-  width: 500px;
+  width: 800px;
   padding: 0 20px 20px;
   margin: 0 auto;
 }
