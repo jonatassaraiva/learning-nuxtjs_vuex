@@ -1,22 +1,36 @@
-# learning-nuxtjs_vuex
-
-> My bee&#39;s knees Nuxt.js project
+# Learning NUXJS with VUEX
+- [Nuxt.js docs](https://nuxtjs.org).
+- [Vuex docs](https://vuex.vuejs.org).
 
 ## Build Setup
 
+### Run json-server
+``` bash
+# install server-json
+$ npm install json-server -g
+
+$ cd db
+
+$ json-server --port 3001 --watch events.json
+```
+
+### Run dev
 ``` bash
 # install dependencies
 $ npm run install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
+```
 
-# build for production and launch server
+### Build for production and launch server
+``` bash
 $ npm run build
 $ npm run start
 
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### Generate static project
+``` bash
+$ npm run generate
+```

@@ -1,0 +1,77 @@
+{
+  "events": [
+    {
+      "id": 5928101,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Cat Cabaret",
+      "description": "Yay felines!",
+      "location": "Meow Town",
+      "date": "2019-01-03T21:54:00.000Z",
+      "time": "2:00",
+      "attendees": []
+    },
+    {
+      "id": 8419988,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Kitty Cluster",
+      "description": "Yay cats!",
+      "location": "Catlandia",
+      "date": "2019-01-31T22:09:00.000Z",
+      "time": "7:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Puppy Parade",
+      "description": "Yay pups!",
+      "location": "Puptown ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": "9c183260-de67-11e9-822a-9d80ca35b19e",
+      "category": "Nature",
+      "title": "teste",
+      "description": "teste",
+      "location": "teste",
+      "date": "2019-09-27T01:06:00.000Z",
+      "time": "16:00",
+      "attendees": [],
+      "organizer": {
+        "id": "uuid_1",
+        "name": "Jonatas Saraiva"
+      }
+    },
+    {
+      "id": "34d5e510-e0bb-11e9-824e-07d050391312",
+      "category": "Animal Welfare",
+      "title": "Test Animal",
+      "description": "Test Animal",
+      "location": "Test Animal",
+      "date": "2019-10-01T00:09:00.000Z",
+      "time": "2:00",
+      "attendees": [],
+      "organizer": {
+        "id": "uuid_1",
+        "name": "Jonatas Saraiva"
+      }
+    }
+  ]
+}
