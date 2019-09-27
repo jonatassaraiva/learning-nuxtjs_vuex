@@ -27,18 +27,14 @@
 <script>
 export default {
   asyncData({ route, store, error }) {
-    return store
-      .dispatch('events/getEvent', route.params.id)
-      .then(result => {
-        return { event: result.data };
-      })
+    return store.dispatch('events/getEvent', route.params.id)
       .catch(err => {
         error({ statusCode: err.response.status, message: err.message });
       });
   },
   computed: {
-    current() {
-      return this.$store.getters['events/current'];
+    event() {
+      return this.$store.state.events.event;
     }
   }
 };

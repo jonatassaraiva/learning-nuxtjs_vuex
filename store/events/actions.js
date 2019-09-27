@@ -12,23 +12,30 @@ const apiClient = axios.create({
 });
 
 export default {
-  createEvent({ commit, dispatch }, event) {
-    const newEvent = {
+  createEvent({ commit}, event) {
+    const bodyEvent = {
       id: uuid(),
       ...event
     }
-    return apiClient.post('/events', newEvent)
-      .then(result => {
-        console.log(result);
-        commit('ADD_EVENT', newEvent);
-        commit('SET_EVENT', newEvent);
+    return apiClient.post('/events', bodyEvent)
+      .then(response => {
+        console.log(response);
+        commit('ADD_EVENT', bodyEvent);
+        commit('SET_EVENT', bodyEvent);
       });
   },
-  getEvent({ commit, dispatch }, eventId) {
+  getEvent({ commit}, eventId) {
     return apiClient.get(`/events/${eventId}`)
-      .then(result => {
-        commit('SET_EVENT', result.data);
-        return result;
+      .then(response => {
+        commit('SET_EVENT', response.data);
+      });
+  },
+  getEvents({ commit, state }, page) {
+    return apiClient.get(`/events?_limit=${state.list.limit}&_page=${page || 1}`)
+      .then(response => {
+        commit('SET_LIST', response.data);
+        commit('SET_LIST_TOTAL', parseInt(response.headers['x-total-count']));
+        commit('SET_LIST_PAGE', page || 1);
       });
   }
 };

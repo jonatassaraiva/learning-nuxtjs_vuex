@@ -16,6 +16,21 @@
       "attendees": []
     },
     {
+      "id": 59281011,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare 1",
+      "organizer": "Adam",
+      "title": "Cat Cabaret",
+      "description": "Yay felines!",
+      "location": "Meow Town",
+      "date": "2019-01-03T21:54:00.000Z",
+      "time": "2:00",
+      "attendees": []
+    },
+    {
       "id": 8419988,
       "user": {
         "id": "abc123",
@@ -67,6 +82,62 @@
       "location": "Test Animal",
       "date": "2019-10-01T00:09:00.000Z",
       "time": "2:00",
+      "attendees": [],
+      "organizer": {
+        "id": "uuid_1",
+        "name": "Jonatas Saraiva"
+      }
+    },
+    {
+      "id": "475b87e0-e0c9-11e9-bb63-a92388d263d2",
+      "category": "Nature",
+      "title": "Test Nature",
+      "description": "Test Nature",
+      "location": "Test Nature",
+      "date": "2019-09-27T01:50:00.000Z",
+      "time": "2:00",
+      "attendees": [],
+      "organizer": {
+        "id": "uuid_1",
+        "name": "Jonatas Saraiva"
+      }
+    },
+    {
+      "id": "9bc50720-e0c9-11e9-8077-9117475bf2f7",
+      "category": "Housing",
+      "title": "Test Housing",
+      "description": "Test Housing",
+      "location": "Test Housing",
+      "date": "",
+      "time": "",
+      "attendees": [],
+      "organizer": {
+        "id": "uuid_1",
+        "name": "Jonatas Saraiva"
+      }
+    },
+    {
+      "id": "a7bf9630-e0c9-11e9-8077-9117475bf2f7",
+      "category": "Nature",
+      "title": "Test Housing",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": [],
+      "organizer": {
+        "id": "uuid_1",
+        "name": "Jonatas Saraiva"
+      }
+    },
+    {
+      "id": "b1058c90-e0c9-11e9-8077-9117475bf2f7",
+      "category": "Housing",
+      "title": "Test Housing",
+      "description": "Test Housing",
+      "location": "Test Housing",
+      "date": "2019-09-10T01:53:00.000Z",
+      "time": "1:00",
       "attendees": [],
       "organizer": {
         "id": "uuid_1",

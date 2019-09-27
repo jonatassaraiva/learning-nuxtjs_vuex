@@ -1,6 +1,9 @@
 export default () => ({
-  list: [],
-  total: 0,
-  event: null,
-  perPage: 3
+  list: {
+    items: [],
+    total: 0,
+    page: 1,
+    limit: 3,
+  },
+  event: null
 });

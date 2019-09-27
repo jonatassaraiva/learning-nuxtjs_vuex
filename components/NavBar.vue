@@ -1,8 +1,8 @@
 <template>
   <div id="nav" class="nav">
     <nuxt-link class="brand" to="/">Real World Events</nuxt-link>
-    <nuxt-link class="nav-item" to="/list">List of events</nuxt-link>
-    <nuxt-link class="nav-item" to="/event/create">Create Events</nuxt-link>
+    <nuxt-link class="nav-item" to="/events">List of events</nuxt-link>
+    <nuxt-link class="nav-item" to="/events/create">Create Events</nuxt-link>
   </div>
 </template>
 
