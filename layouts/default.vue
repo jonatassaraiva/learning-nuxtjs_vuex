@@ -2,6 +2,7 @@
   <div>
     <div id="app">
       <nav-bar />
+      <notification-container />
       <nuxt />
     </div>
   </div>
@@ -9,10 +10,12 @@
 
 <script>
 import NavBar from '@/components/NavBar';
+import NotificationContainer from '@/components/NotificationContainer';
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    NotificationContainer
   }
 };
 </script>

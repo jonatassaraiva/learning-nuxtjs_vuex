@@ -11,4 +11,4 @@ export default {
   SET_EVENT(state, event) {
     state.event = event
   }
-} 
+};

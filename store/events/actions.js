@@ -12,7 +12,7 @@ const apiClient = axios.create({
 });
 
 export default {
-  createEvent({ commit}, event) {
+  createEvent({ commit }, event) {
     const bodyEvent = {
       id: uuid(),
       ...event
@@ -24,18 +24,21 @@ export default {
         commit('SET_EVENT', bodyEvent);
       });
   },
-  getEvent({ commit}, eventId) {
+  getEvent({ commit }, eventId) {
     return apiClient.get(`/events/${eventId}`)
       .then(response => {
         commit('SET_EVENT', response.data);
       });
   },
-  getEvents({ commit, state }, page) {
+  getEvents({ commit, state, dispatch }, page) {
     return apiClient.get(`/events?_limit=${state.list.limit}&_page=${page || 1}`)
       .then(response => {
         commit('SET_LIST', response.data);
         commit('SET_LIST_TOTAL', parseInt(response.headers['x-total-count']));
         commit('SET_LIST_PAGE', page || 1);
+      })
+      .catch(err => {
+        dispatch('notifications/add', { type: 'error', message: `Error to fetching events: ${err.message}` }, { root: true });
       });
   }
 };
